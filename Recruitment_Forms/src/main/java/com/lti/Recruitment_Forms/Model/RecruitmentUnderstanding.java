@@ -35,6 +35,43 @@ public class RecruitmentUnderstanding {
 	@Column(name ="criteria")
 	private String criteria;
 	
+	@Column(name ="Requestor_Id")
+	private String requestorId;
+	
+	@Column(name ="Requestor_PU_BU")
+	private String requestorPUBU;
+	
+	@Column(name ="Requestor_Department")
+	private String requestorDepartment;
+
+	
+	public String getRequestorId() {
+		return requestorId;
+	}
+	
+	public void setRequestorId(String requestorId) {
+		this.requestorId = requestorId;
+	}
+
+	public String getRequestorPUBU() {
+		return requestorPUBU;
+	}
+
+	public void setRequestorPUBU(String requestorPUBU) {
+		this.requestorPUBU = requestorPUBU;
+	}
+
+	public String getRequestorDepartment() {
+		return requestorDepartment;
+	}
+
+	public void setRequestorDepartment(String requestorDepartment) {
+		this.requestorDepartment = requestorDepartment;
+	}
+
+	
+	
+	
 	
 
 	
@@ -101,7 +138,8 @@ public class RecruitmentUnderstanding {
 	}
 
 	public RecruitmentUnderstanding(int formIdTwo, String jobTitle, String jobOverview, int resourcesNeeded,
-			String skillsRequired, String criteria, int formIdOne) {
+			String skillsRequired, String criteria, String requestorId, String requestorPUBU,
+			String requestorDepartment, DemandDetails demand_details) {
 		super();
 		this.formIdTwo = formIdTwo;
 		this.jobTitle = jobTitle;
@@ -109,15 +147,20 @@ public class RecruitmentUnderstanding {
 		this.resourcesNeeded = resourcesNeeded;
 		this.skillsRequired = skillsRequired;
 		this.criteria = criteria;
-		
+		this.requestorId = requestorId;
+		this.requestorPUBU = requestorPUBU;
+		this.requestorDepartment = requestorDepartment;
+		this.demand_details = demand_details;
 	}
 
 	@Override
 	public String toString() {
 		return "RecruitmentUnderstanding [formIdTwo=" + formIdTwo + ", jobTitle=" + jobTitle + ", jobOverview="
 				+ jobOverview + ", resourcesNeeded=" + resourcesNeeded + ", skillsRequired=" + skillsRequired
-				+ ", criteria=" + criteria + ", demand_details=" + demand_details + "]";
+				+ ", criteria=" + criteria + ", requestorId=" + requestorId + ", requestorPUBU=" + requestorPUBU
+				+ ", requestorDepartment=" + requestorDepartment + ", demand_details=" + demand_details + "]";
 	}
+
 
 
 	
