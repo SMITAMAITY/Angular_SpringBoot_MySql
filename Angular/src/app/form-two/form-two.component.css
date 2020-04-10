@@ -1,0 +1,97 @@
+.header-section{
+    height: 80px;
+    line-height: 80px;
+    color: beige;
+    background-color: rgb(46, 43, 43);
+    font-size: 24px;
+    padding-left: 20px;
+}
+
+.card{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+    /* margin: 20px; */
+     padding: 5px; 
+    height:auto;
+    margin-left: 400px;
+    margin-right: 300px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+input[type="text"], textarea
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:600px;
+}
+
+input[type="number"]
+{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:100px;
+}
+
+
+.card1{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+    margin: 20px;
+    padding: 10px;
+    height: 1300px;
+}
+
+.rrid{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.card2{
+    background-color: white;
+    box-shadow:0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+    color:black;
+     margin-left: 5px; 
+    padding: 10px;
+    width:700px;
+}
+
+legend{
+    margin-bottom:4px;
+}
+
+label{
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+h4{
+    margin-top: 5%;
+    
+}
+
+
+#request{
+    
+    width: 600px;
+    
+}
+
+table,td,tr{
+    margin-left: 0px;
+}
+
+h4{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 0px;
+    background-color: cornflowerblue;
+}
+
+#units{
+    font-size: 20px;
+    font-family: sans-serif;
+    width:100px;
+}
+

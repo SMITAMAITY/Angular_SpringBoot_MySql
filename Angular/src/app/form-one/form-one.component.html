@@ -1,0 +1,111 @@
+
+<div class="container-fluid">
+    <div class="row header-section">
+        <span>Form One</span>
+    </div>
+
+        <div class="row card">
+             <!-- <h3>{{data}}</h3> -->
+   <form [formGroup]="userForm" (ngSubmit)="submit()">
+       <div class="form-group">
+        <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h4>Related to Resource Request</h4>
+            <!-- <div class="row card"> -->
+                <div class="col-sm-12">
+                    
+                    <div class="rrid">
+                        <table>
+                            <tr>
+                                <td> <label>Resource Request ID  </label></td>
+                        <td><input type="text"  id="request" formControlName="jrRRID"></td>
+                        </tr>
+                        </table>
+                    </div>
+                  
+             
+                </div>                
+            <!-- </div> -->
+
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <h4>Job Description Details</h4>
+             <!-- <div class="row card1"> -->
+          
+
+            <div class="col-sm-12">
+            <div>
+           
+        <table>
+        <tr>
+            <td><label> Job Title</label></td>
+            <td><input type="text" formControlName="jobTitle"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label> Job Overview</label></td>
+            <td><textarea rows="10" cols="82" formControlName="jobOverview"></textarea></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label>Experience</label></td>
+            <td><input type="number" formControlName="experience"></td>
+           
+        </tr>
+        <br>
+      
+        <tr>
+              <td><label>Skills</label></td>
+              <td><textarea cols="82" rows="10" formControlName="skillsRequired"></textarea></td>
+        </tr>
+    
+        <br>
+        
+         <tr>
+                <td><label>Requestor's Id</label></td>
+                <td><input type="text" formControlName="requestorId"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label>Requestor's Units</label></td>
+                <td> <select id="units"  formControlName="requestorPUBU">
+                    <option value="no value">select</option>
+                    <option value="PU">PU</option>
+                    <option value="BU">BU</option>
+                    </select></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label>Requestor's Department</label></td>
+                <td><input type="text" formControlName="requestorDepartment"></td>
+            </tr>
+            <br>
+    
+     
+    </table>
+
+    </div>
+    </div>
+     <!-- </div>  -->
+    </div>  
+ <div class="col-sm-5" style="float:right;text-align: center;"><button type="submit" class="btn btn-success" >Save And Proceed</button></div>
+<br>
+<br>
+
+<br>
+<br>
+
+</div>
+</div>
+
+</form>
+</div>
+</div>
+
